@@ -126,68 +126,6 @@ helpdesk/
 
 ---
 
-### Step 8 — Login
-| Role | Email | Password |
-|---|---|---|
-| Admin | admin@helpdesk.com | password123 |
-| User | rahul@company.com | password123 |
-
----
-
-## 🌐 Deploy Online — Free Hosting
-
-### InfinityFree (Recommended)
-
-**Step 1 — Sign Up**
-👉 https://infinityfree.com → Create free account
-
-**Step 2 — Create Hosting**
-1. Login → Click **"Create Account"**
-2. Choose subdomain: `myhelpdesk.infinityfreeapp.com`
-3. Click **Create**
-
-**Step 3 — Create Database**
-1. Control Panel → **MySQL Databases**
-2. Create database → Note down:
-   - Host (e.g. `sql200.infinityfree.com`)
-   - Database name
-   - Username
-   - Password
-
-**Step 4 — Update db.php**
-```php
-define('DB_HOST', 'sql200.infinityfree.com');
-define('DB_USER', 'your_db_user');
-define('DB_PASS', 'your_db_pass');
-define('DB_NAME', 'your_db_name');
-```
-
-**Step 5 — Import Database**
-1. Control Panel → **phpMyAdmin**
-2. Select your database → **Import**
-3. Upload `database.sql` → Go
-4. Upload `database_updates.sql` → Go
-
-**Step 6 — Upload Files**
-
-**Option A — File Manager:**
-1. Control Panel → **File Manager**
-2. Open `htdocs` folder
-3. Upload all project files
-
-**Option B — FileZilla FTP:**
-1. Download FileZilla — https://filezilla-project.org
-2. Host: `ftpupload.net`
-3. Username/Password: from InfinityFree panel
-4. Upload all files to `/htdocs/`
-
-**Step 7 — Visit Live Site**
-```
-http://myhelpdesk.infinityfreeapp.com/login.php
-```
-
----
-
 ## 📊 SLA Policy
 
 | Priority | Time Limit |
@@ -201,12 +139,7 @@ http://myhelpdesk.infinityfreeapp.com/login.php
 
 
 ## 👨‍💻 Author
-
-**Your Name**
+Pushpesh Kumar
 - 🎓 [Shri Ramswaroop Memorial University]
 - 📧 pushpesh018@gmail.com
-- 🐙 [GitHub]()
-
 ---
-
-> ⭐ If this helped you, please give it a star on GitHub!
